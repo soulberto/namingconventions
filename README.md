@@ -1,2 +1,4 @@
-# namingconventions
-Convenciones de nombramiento
+# Convenciones de nombramiento
+Formas de nombrar los diferentes artefactos
+
+
