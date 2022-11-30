@@ -1,0 +1,23 @@
+{
+  "name": "namingconventions",
+  "version": "0.0.1",
+  "description": "Convenciones de nombramiento",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soulberto/namingconventions.git"
+  },
+  "keywords": [
+    "conventions",
+    "naming"
+  ],
+  "author": "Soulberto Lorenzo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soulberto/namingconventions/issues"
+  },
+  "homepage": "https://github.com/soulberto/namingconventions#readme"
+}
