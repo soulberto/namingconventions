@@ -1,18 +1,30 @@
 # Convenciones de nombramiento
 
-Formas de nombrar los diferentes artefactos
+A continuación ya recopilación de recomendaciones para el nombrado de diferentes artefactos en el desarrollo de aplicaciones sobre Salesforces:
 
-| Nombre de Objeto | Tipo de objeto | Ejemplo                |
-| :--------------: | -------------- | ---------------------- |
-|  RenewalPoliciy  | Batch          | RenewalPoliciy.cls     |
-| UpdateOperation  | Job            | UpdateOperationJob.cls |
-|  RenewalPolicy   | Test           | RenewalPolicyTest.cls  |
-|     SendMail     | Queue          | SendMailQueue.cls      |
-|     Account      | Trigger        | AccountTrigger.cls     |
+## Estilo de nombrado de los diferentes artefactos y archivos
 
-|       Nombre de archivos        | Descripción                                                                                                                                                                                                                                                                                  | Ejemplo          |
-| :-----------------------------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
-|         Nombre de clase         | Los nombres de las clases deben ser únicos, comenzando con una letra mayúscula. NO debe contener guiones bajos o espacios (excepto el prefijo y el sufijo). Los nombres de las clases deben ser sustantivos en casos mixtos, con la primera letra de cada palabra de intervalo en mayúsculas | RenewalPoliciy   |
-| Nombre de variable y parámetros | Las variables deben estar con una primera letra minúscula. Las palabras internas comienzan con letras mayúsculas. Los nombres variables deben ser cortos y significativos. Concretamente debe ser estilo camelCase                                                                           | updateAccounts   |
-|        Nombre de método         | Los métodos deben ser verbos, en casos mixtos con la primera letra en minúsculas, con la primera letra de cada palabra interna en mayúsculas. Se deben usar palabras completas y el uso de acrónimos y abreviaturas debe ser limitado                                                        | updateAccounts() |
-|            Contantes            | Los nombres de las variables declaradas en las constantes de clase deben estar en mayúsculas con palabras separadas por guiones bajos ("\_")                                                                                                                                                 | ACCOUNT_LIMIT    |
+| Prefijos | Donde usarlo | Descripcón          | Ejemplo de uso                              |
+| -------- | ------------ | ------------------- | ------------------------------------------- |
+| ClbIns   | Apex         | Siglas de Cloudblue | <code>ClbInsDraftInsurancePolicy.cls</code> |
+| Helper   | Apex         | Código de utilidad  | <code>FTPHelper.cls</code>                  |
+| Batch    | Apex         | Batch               | <code>RenewalPoliciyBatch.cls</code>        |
+| Job      | Apex         | Job                 | <code>UpdateOperationJob.cls</code>         |
+| Test     | Apex         | Test                | <code>RenewalPolicyTest.cls</code>          |
+| Queue    | Apex         | Queue               | <code>SendMailQueue.cls</code>              |
+| Tigger   | Apex         | Trigger             | <code>AccountTrigger.cls</code>             |
+
+## Estilo de nombrado y convenciones de código
+
+| Nombre de archivos             | Donde usarlo | Descripción                                                                                                                                                                                                                                                                                  | Ejemplo de uso                                           |
+| ------------------------------ | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| Clases e interfaces            | Apex         | Los nombres de las clases deben ser únicos, comenzando con una letra mayúscula. NO debe contener guiones bajos o espacios (excepto el prefijo y el sufijo). Los nombres de las clases deben ser sustantivos en casos mixtos, con la primera letra de cada palabra de intervalo en mayúsculas | <code>public with sharing class RenewalPoliciy {}</code> |
+| Variable y parámetros          | Apex         | Las variables deben estar con una primera letra minúscula. Las palabras internas comienzan con letras mayúsculas. Los nombres variables deben ser cortos y significativos. Concretamente debe ser estilo camelCase                                                                           | <code>String accountDescription = '';</code>             |
+| Métodos                        | Apex         | Los métodos deben ser verbos, en casos mixtos con la primera letra en minúsculas, con la primera letra de cada palabra interna en mayúsculas. Se deben usar palabras completas y el uso de acrónimos y abreviaturas debe ser limitado                                                        | <code>updateAccounts();</code>                           |
+| Contantes y valores inmutables | Apex         | Los nombres de las variables declaradas en las constantes de clase deben estar en mayúsculas con palabras separadas por guiones bajos ("\_")                                                                                                                                                 | <code>final String ACCOUNT_LIMIT = 100;</code>           |
+
+## Citas e información adicional disponible en la web
+
+\* https://quip.com/MW5cAPVwat8k#JCIACA8Q963
+
+\*\* https://www.apexhours.com/salesforce-naming-conventions-best-practices/
