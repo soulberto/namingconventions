@@ -1,12 +1,13 @@
-# Convenciones de nombramiento
+# # Convenciones de nombramiento
 
 A continuación ya recopilación de recomendaciones para el nombrado de diferentes artefactos en el desarrollo de aplicaciones sobre Salesforces:
 
 ## Estilo de nombrado de los diferentes artefactos y archivos
 
-| Prefijos | Donde usarlo | Descripcón          | Ejemplo de uso                              |
+| Prefijos | Donde usarlo | Descripción          | Ejemplo de uso                              |
 | -------- | ------------ | ------------------- | ------------------------------------------- |
-| ClbIns   | Apex         | Siglas de Cloudblue | <code>ClbInsDraftInsurancePolicy.cls</code> |
+| clb_ins_ | Objetos personalizados, Objetos de Salesforce Estándar, Big Objets, Eventos y cualquier otro tipo de objeto dentro de la estructura de Salesforce que lo permita | Siglas de Cloudblue | Se debe usar en las definiciones de Objetos y Campos Personalizados, por ejemplo: <code>clb_ins_PolicyDetails__c, clb_ins_PolicyEvent__e, clb_ins_TransactionHistory__b</code> |
+| ClbIns  | Lightning Web Component (LWC) | Siglas de Cloudblue | <code>ClbInsDraftInsurancePolicy.cls</code> |
 | Helper   | Apex         | Código de utilidad  | <code>FTPHelper.cls</code>                  |
 | Batch    | Apex         | Batch               | <code>RenewalPoliciyBatch.cls</code>        |
 | Job      | Apex         | Job                 | <code>UpdateOperationJob.cls</code>         |
